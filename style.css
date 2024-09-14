@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto";
 }
 body {
   background-color: #cdf2f9;
@@ -8,21 +9,26 @@ body {
 #logo {
   width: 5rem;
   border-radius: 10rem;
-  position: relative;
-  z-index: 1;
+  flex-direction: start;
+  /* z-index: 1; */
+
 }
 .header-container {
-  overflow: hidden;
-  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: relative;
+  align-items: auto;
   width: 1440px;
-  margin: 0 auto;
   background-color: #fff;
   border: 1px solid #5d737e;
+  /* overflow: hidden; */
+  /* box-sizing: border-box; */
+  /* flex-direction: column; */
+  /* flex-wrap: nowrap; */
+  /* position: relative; */
+  margin: auto;
+  /* justify-content: center; */
+  /* flex-wrap: nowrap; */
+  /* gap: 40px; */
+  
 }
 
 .top-bar {
@@ -31,8 +37,8 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     gap: 20px;
-    height: 60px;
-    padding: 20px 20px 20px 20px;
+    height:60px;
+    padding: 20px;
     
 }
 
@@ -46,4 +52,101 @@ body {
     line-height: 36px;
     text-align: left;
 
+}
+
+.navigation {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  /* flex-wrap: nowrap; */
+  gap: 40px;
+  /* position: relative; */
+  width: 668px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+   
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 60px;
+  position: relative;
+  padding: 60px 170px;
+  overflow: hidden;
+}
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  gap: 24px;
+  position: relative;
+  z-index: 13;
+
+}
+.welcome-to-cupcake {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 520px;
+  height: 96px;
+  color: #000000;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  z-index: 14;
+}
+.cupcake-description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  width: 520px;
+  height: 48px;
+  color: #5d737e;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  z-index: 15;
+}
+.image-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  position: relative;
+  height: 400px;
+  background: no-repeat center;
+  background-size: cover;
+  z-index: 16;
+  overflow: hidden;
+}
+.image {
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  position: relative;
+  min-height: 0;
+  background-size: cover;
+  z-index: 17;
 }
