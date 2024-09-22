@@ -1,31 +1,37 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: #cdf2f9;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .top-bar-container {
-  
+
   width: 100%;
-  height: 117px;
+  height: 120px;
   flex-direction: row;
+  background-color: #fff;
+  box-shadow: 0 4px 12px #000;
 
 }
+
 .top-bar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   width: 80%;
-  height: 117px;
+  height: 100%;
   margin: auto;
-  justify-content: space-between;
-  background-color: #fff;
   padding: 15px;
-  
+
 }
 
 .top-bar img {
@@ -34,34 +40,77 @@ body {
   margin: 15px;
 
 }
+
 .top-bar h2 {
-  
-  position: fixed;
-  margin-left: 120px;
+
   font-size: 36px;
+  color: #333;
+  margin-left: 20px;
+
 }
 
-.links a{
+#links a {
   text-decoration: none;
   margin: 15px;
   font-size: 24px;
+  color: #333;
 
 }
-.search-in-site {
-  
-  font-size: 24px;
-  
 
+#links button {
+
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
 
 }
+
 .banner-container {
   width: 80%;
-  height: 117px;
+  height: 400px;
   margin: auto;
- 
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
 }
-.banner {
+
+#banner {
   display: flex;
   justify-content: space-between;
+
+}
+.welcome-to-cupcake {
+  /* display: flex; */
+  width: 520px;
+  height: 96px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+ 
+}
+.description-cupcake {
+  /* display: flex; */
+  /* align-items: flex-start; */
+  /* justify-content: flex-start; */
+  /* align-self: stretch; */
+  flex-direction:row;
+  width: 520px;
+  height: 48px;
+  color: #5d737e;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  /* text-align: left; */
   
+}
+
+#image-banner img{
+ height: 400px;
+ width: 520px;
 }
