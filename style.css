@@ -18,6 +18,7 @@ header {
   height: 120px;
   background-color: #fff;
   align-items: center;
+  
 }
 
 
@@ -72,6 +73,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+
 }
 
 .hero {
@@ -88,7 +91,7 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  }
+}
 
 .hero h2 {
   color: #333;
@@ -113,45 +116,73 @@ main {
   height: auto;
 
 }
+
 section {
   display: flex;
-  align-items: center;
   width: 80%;
-}
-
-.products-area {
-  display: flex;
-  height: 120px;
-  margin-top: 30px;
-  gap: 60px;
-  width: 100%;
-
-}
-
-.products-area img {
-  border-radius: 50%;
-  margin-left: 20px;
- 
-}
-
-.cupcake-flavors-container {
-  display: flex;
-  margin-top: 30px;
-  gap: 60px;
-  width: 100%;
   
 }
 
-.cupcake-flavors {
- 
+#products-area {
+  flex-direction: column;
+}
+#products-area .title-container {
+  justify-content: space-between;
+   align-items: center;
+   display: flex;
+  border: 1px solid blue;
+
+}
+
+#products-area .title-container img {
+  border-radius: 50%;
+}
+
+#products-area .title {
   background-color: #67E9FF;
   border-radius: 15px;
   color: #5D737E;
   font-size: 35px;
   justify-content: center;
   text-align: center;
-  width: 100%;
+  width: 80%;
   align-content: center;
   font-weight: bold;
-  
+  height: 120px;
 }
+
+.product-card img {
+  width: 100%;
+}
+
+.product-cards {
+  display: flex;
+  
+  margin-top: 30px;
+  border: 1px solid black;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  border: 1px solid #5D737E;
+}
+.product-card button {
+  padding: 15px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 8px;
+
+}
+.product-title {
+  font-size: 24px;
+  padding: 3px;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #5D737E;
+} 
