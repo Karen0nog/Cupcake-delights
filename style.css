@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: #cdf2f9;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -16,11 +15,10 @@ header {
   display: flex;
   width: 100%;
   height: 120px;
-  background-color: #fff;
+  background-image: linear-gradient(45deg, #9bf8f4, #6f7bf7);
   align-items: center;
   
 }
-
 
 .site-identity {
   display: flex;
@@ -74,6 +72,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: linear-gradient(45deg,  #6f7bf7, #9bf8f4);
 
 }
 
@@ -114,6 +113,7 @@ main {
 .hero-image img {
   width: 100%;
   height: auto;
+  border: 1px solid #333;
 
 }
 
@@ -130,18 +130,17 @@ section {
   justify-content: space-between;
    align-items: center;
    display: flex;
-  border: 1px solid blue;
-
 }
 
 #products-area .title-container img {
   border-radius: 50%;
+  border: 1px solid #333;
 }
 
 #products-area .title {
-  background-color: #67E9FF;
+  background-image: linear-gradient(45deg, #9bf8f4, #6f7bf7);
   border-radius: 15px;
-  color: #5D737E;
+  color: #333;
   font-size: 35px;
   justify-content: center;
   text-align: center;
@@ -151,38 +150,42 @@ section {
   height: 120px;
 }
 
+.title {
+  border: 1px solid #333;
+}
+
 .product-card img {
   width: 100%;
 }
 
 .product-cards {
   display: flex;
-  
+  justify-content: space-between;
   margin-top: 30px;
-  border: 1px solid black;
+  
 }
 .product-card {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 30%;
-  border: 1px solid #5D737E;
+  border: 1px solid #333;
 }
 .product-card button {
   padding: 15px;
   background-color: #fff;
-  color: #000;
+  color: #333;
   font-weight: bold;
   font-size: 20px;
   margin: 8px;
 
 }
 .product-title {
-  font-size: 24px;
+  font-size: 18px;
   padding: 3px;
 }
 
 .product-price {
-  font-size: 20px;
+  font-size: 16px;
   color: #5D737E;
 } 
